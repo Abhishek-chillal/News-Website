@@ -1,0 +1,15 @@
+
+<%- include('partials/header.ejs') %> 
+</head>
+<body>
+<div class="container">
+
+    <% NEWS.forEach(function(element){ %>
+        <h1><%=element.title%></h1>
+        <img class="home_img" src="image/<%=element.image %>" alt="<%=element.title %>">
+        <p><%=element.descr1+"..."%><a href="/<%=element.title %>">Read More</a></p>
+
+    <% }); %> 
+
+</div>
+<%- include('partials/footer') %> 

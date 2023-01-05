@@ -1,0 +1,15 @@
+<%- include("partials/header") -%> 
+</head>
+<body>
+    <div class="container">
+    <% data.forEach(function(found){ %>
+        <% if(found.title===match){ %> 
+            <h1><%=found.title %></h1>
+            <p><%=found.descr1%></p>
+            <img class="post_img" src="image/<%=found.image%>" alt="<%=match %>">
+            <p><%=found.desc2%></p>
+        <% } %> 
+        <% }); %> 
+        
+    </div>
+<%-include("partials/footer") %> 
